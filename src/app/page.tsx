@@ -64,7 +64,7 @@ function Home() {
         />
         <h2 className='text-4xl text-center'>{quote.author}</h2>
         <h3 className='text-2xl'>{quote.job}</h3>
-        <p className='px-4 md:px-16 text-lg font-medium text-center'>{quote.quote}</p>
+        <p className='px-4 md:px-16 text-lg font-medium text-center text-sky-950'>{quote.quote}</p>
         <div className='flex gap-4 md:gap-16 mx-5'>
           <button 
             className='bg-sky-400 p-5 text-base md:text-4xl rounded-2xl drop-shadow-2xl h-fit'
