@@ -69,6 +69,64 @@ function Home() {
           </button>
         </div>
       </div>
+
+      <section className="w-full md:w-2/4 px-4 mb-16">
+        <div className="bg-slate-100 rounded-3xl drop-shadow-2xl p-8">
+          
+          <h2 className="text-3xl font-bold text-sky-950 text-center mb-6">
+            Como essa aplicação funciona?
+          </h2>
+
+          <p className="text-center text-slate-700 text-lg mb-8">
+            Este projeto consome múltiplas APIs externas e utiliza um backend
+            intermediário em Express para processar os dados antes de exibir
+            a citação ao usuário.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            
+            <div className="bg-sky-100 rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-sky-900 mb-3">
+                1. Citação
+              </h3>
+              <p className="text-slate-700">
+                Busca uma citação aleatória em inglês através da API
+                <span className="font-semibold"> ZenQuotes</span>.
+              </p>
+            </div>
+
+            <div className="bg-sky-100 rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-sky-900 mb-3">
+                2. Tradução
+              </h3>
+              <p className="text-slate-700">
+                O backend traduz automaticamente a frase para português usando
+                uma API de tradução.
+              </p>
+            </div>
+
+            <div className="bg-sky-100 rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-sky-900 mb-3">
+                3. Imagem
+              </h3>
+              <p className="text-slate-700">
+                Uma terceira API busca a imagem do autor para completar a
+                experiência visual.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 bg-sky-950 rounded-2xl p-6 text-white text-center">
+            <h3 className="text-2xl font-semibold mb-3">
+              Stack utilizada
+            </h3>
+
+            <p className="text-lg">
+              Next.js • TypeScript • Tailwind • Node.js • Express • APIs REST
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
