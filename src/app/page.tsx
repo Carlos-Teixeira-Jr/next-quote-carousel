@@ -19,7 +19,7 @@ function Home() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:3000/api/random-quote"
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/random-quote`
       );
 
       const data = await response.json();
